@@ -19,13 +19,11 @@
 #' @import ChristophWorldPopulation
 CountryPopulation <- function(CountryInput)
 {
-
-  if (!(CountryInput %in% WorldPopulation$Country_Name))
+  if (!(CountryInput %in% ChristophWorldPopulation::WorldPopulation$Country_Name))
   {
     stop(paste("Error: The country", CountryInput, "does not exist in the WorldPopulation dataset."))
   }
-
-  WorldPopulation %>%
+  ChristophWorldPopulation::WorldPopulation %>%
     filter(Country_Name == CountryInput) %>%
     ggplot(aes(x = Year, y = Population)) +
     geom_point() +
