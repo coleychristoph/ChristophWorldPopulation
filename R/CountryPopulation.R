@@ -16,6 +16,7 @@
 #' }
 #'
 #' @import tidyverse
+#' @import ChristophWorldPopulation
 CountryPopulation <- function(CountryInput)
 {
 
