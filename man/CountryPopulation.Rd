@@ -21,5 +21,4 @@ a graph of the population from 1950 to 2020
 CountryPopulation("China")
 CountryPopulation("Brazil")
 }
-
 }
