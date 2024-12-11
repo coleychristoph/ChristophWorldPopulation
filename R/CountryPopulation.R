@@ -10,7 +10,7 @@
 #' @return A graph of the country's population from 1950 to 2020.
 #'
 #' @examples
-#' \dontrun{
+#' {
 #' CountryPopulation("China")
 #' CountryPopulation("Brazil")
 #' }
@@ -18,6 +18,9 @@
 #' @import tidyverse
 CountryPopulation <- function(CountryInput)
 {
+  library(dplyr)
+  library(ggplot2)
+
   if (!(CountryInput %in% WorldPopulation$Country_Name))
   {
     stop(paste("Error: The country", CountryInput, "does not exist in the WorldPopulation dataset."))

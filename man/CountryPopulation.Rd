@@ -17,7 +17,7 @@ A function that when given a Country's name produces
 a graph of the population from 1950 to 2020
 }
 \examples{
-\dontrun{
+{
 CountryPopulation("China")
 CountryPopulation("Brazil")
 }
