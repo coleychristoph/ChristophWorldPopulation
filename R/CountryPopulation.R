@@ -18,8 +18,6 @@
 #' @import tidyverse
 CountryPopulation <- function(CountryInput)
 {
-  library(dplyr)
-  library(ggplot2)
 
   if (!(CountryInput %in% WorldPopulation$Country_Name))
   {
